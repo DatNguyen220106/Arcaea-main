@@ -20,7 +20,7 @@ export interface Partner {
 export const partnerService = {
   getAllPartners: async (): Promise<Partner[]> => {
     const response = await axiosInstance.get<Partner[]>("Partner");
-    return response.data; // Sử dụng .data thay vì .json() như lỗi cũ
+    return response.data; 
   },
   getPartnerById: async (id: string): Promise<Partner> => {
     const response = await axiosInstance.get<Partner>(`Partner/${id}`);

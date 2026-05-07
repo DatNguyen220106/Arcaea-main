@@ -16,7 +16,7 @@ const AppFooter = () => {
           <Col xs={24} md={8}>
             <div className="flex items-center gap-2 mb-4">
               <img 
-                src="https://arcaea.fandom.com/wiki/Special:FilePath/Site-logo.png" 
+                src="img/image2.jpg" 
                 alt="Logo" 
                 className="h-8 w-8"
               />
@@ -44,7 +44,6 @@ The data is continuously updated from the community.
             <Space size="middle" className="text-2xl">
               <a href="https://www.facebook.com/arcaeagame" style={{ color: arcaeaPurple }}><FacebookOutlined /></a>
               <a href="https://www.youtube.com/@lowiro" style={{ color: arcaeaPurple }}><YoutubeOutlined /></a>
-              <a href="https://arcaea.lowiro.com/en" style={{ color: arcaeaPurple }}><GlobalOutlined /></a>
             </Space>
           </Col>
         </Row>

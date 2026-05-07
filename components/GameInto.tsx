@@ -24,7 +24,7 @@ export default function HomePage() {
       {/* 1. Hero Section */}
       <div className="flex flex-col items-center justify-center pt-20 pb-16 px-4 text-center">
         <img 
-          src="https://arcaea.fandom.com/wiki/Special:FilePath/Site-logo.png" 
+          src="img/image2.jpg" 
           alt="Arcaea Logo" 
           className="h-32 mb-6 drop-shadow-2xl"
         />

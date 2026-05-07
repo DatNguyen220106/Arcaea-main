@@ -72,7 +72,7 @@ export default function DownloadPage() {
                 </Paragraph>
                 <Paragraph style={{ color: '#ccc' }}>
                   <CheckCircleOutlined style={{ color: '#52c41a', marginRight: '10px' }} />
-                  <b>Android:</b> Android 5.0 or later, minimum 2GB RAM.
+                  <b>Android:</b> Android 7.0 or later, minimum 2GB RAM.
                 </Paragraph>
                 <Paragraph style={{ color: '#ccc' }}>
                   <CheckCircleOutlined style={{ color: '#52c41a', marginRight: '10px' }} />
