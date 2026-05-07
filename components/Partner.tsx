@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-import { Table, Avatar, Typography } from 'antd';
+import { Table, Avatar, Typography, List, Card,  } from 'antd';
 import { partnerService, Partner } from '@/service/Partner/partner.service';
 
 const { Title } = Typography;
@@ -39,7 +39,8 @@ export default function PartnerListPage() {
     }
   ];
 
-  return (<div
+  return (
+  <div
         style={{
           width: '100%',
           minHeight: '100vh',
@@ -50,46 +51,65 @@ export default function PartnerListPage() {
           padding: '40px 20px',
         }}
       >
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-10xl mx-auto">
           <h1 className="text-white text-center text-3xl font-bold mb-8 shadow-sm">
             Partners
           </h1>
   
-          <div
-            style={{
-              background: 'rgba(255, 255, 255, 0.1)', // Nền trắng mờ
-              backdropFilter: 'blur(10px)',           // Hiệu ứng kính mờ
-              borderRadius: '16px',
-              padding: '20px',
-              border: '1px solid rgba(255, 255, 255, 0.1)',
-              boxShadow: '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
-            }}
-          >
-            <Table
-              // Thêm class để tùy chỉnh màu chữ bảng cho nổi bật trên nền mờ
-              className="custom-table"
-              columns={columns}
-              dataSource={partners}
-              rowKey="id"
-              pagination={{ pageSize: 8 }}
+
+<div className="card-container" style={{ padding: '20px' }}>
+  <List
+    grid={{
+      gutter: 16,
+      xs: 1, // 1 cột trên điện thoại
+      sm: 2,
+      md: 3,
+      lg: 4, // 4 cột trên máy tính
+      xl: 4,
+      xxl: 6,
+    }}
+    dataSource={partners}
+    renderItem={(partner: Partner) => (
+      <List.Item>
+        <Card
+          hoverable
+          className="glass-card"
+          cover={
+            <img 
+              alt={partner.name} 
+              src={partner.avatar} 
+              style={{ height: '200px', objectFit: 'cover', borderRadius: '12px 12px 0 0' }} 
             />
-          </div>
-        </div>
-  
-        {/* CSS tùy chỉnh cho Table để chữ không bị chìm */}
-        <style jsx global>{`
-          .custom-table .ant-table {
-            background: transparent !important;
-            color: white !important;
           }
-          .custom-table .ant-table-thead > tr > th {
-            background: rgba(255, 255, 255, 0.2) !important;
-            color: white !important;
-          }
-          .custom-table .ant-table-cell {
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
-          }
-        `}</style>
+          style={{ 
+            background: 'rgba(255, 255, 255, 0.05)', 
+            backdropFilter: 'blur(10px)',
+            border: '1px solid rgba(255, 255, 255, 0.1)',
+            borderRadius: '12px',
+            color: '#fff'
+          }}
+        >
+          <Card.Meta
+            title={
+              <Link href={`/Partner/${partner.id}`} style={{ color: '#fff', fontSize: '18px', fontWeight: 'bold' }}>
+                {partner.name}
+              </Link>
+            }
+            description={
+              <div style={{ color: '#aaa' }}>{partner.type}</div>
+            }
+          />
+        </Card>
+      </List.Item>
+    )}
+    pagination={{
+      pageSize: 20,
+      align: 'center',
+      className: 'custom-pagination'
+    }}
+  />
+</div>
       </div>
+</div>
   );
 }

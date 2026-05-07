@@ -67,13 +67,7 @@ The game functions as a <strong>Vertical Scrolling Rhythm Game</strong> with an 
             </Col>
           </Row>
           <Row gutter={[40, 40]} align="middle">
-            <Col xs={24} md={12}>
-              <img 
-                src="img/arcaea-lowiro-opposition-hd-wallpaper-preview.jpg" 
-                alt="Gameplay" 
-                className="w-full rounded-xl shadow-2xl border border-white/20"
-              />
-            </Col>
+            
             <Col xs={24} md={12}>
               <Title level={2} style={{ color: '#fff' }}>Story</Title>
               <Paragraph style={{ color: '#eee', fontSize: '1.1rem' }}>
@@ -82,6 +76,13 @@ The game functions as a <strong>Vertical Scrolling Rhythm Game</strong> with an 
 Each awakens in this blank, ruin-dotted world to discover that she is equally blank, remembering nothing of what came before.
 And then they make a second discovery: the Arcaea, multitudes of floating glass-like shards containing vivid memories of the past. 
               </Paragraph>
+            </Col>
+            <Col xs={24} md={12}>
+              <img 
+                src="img/arcaea-lowiro-opposition-hd-wallpaper-preview.jpg" 
+                alt="Story" 
+                className="w-full rounded-xl shadow-2xl border border-white/20"
+              />
             </Col>
           </Row>
         </div>
