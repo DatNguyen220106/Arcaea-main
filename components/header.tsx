@@ -42,7 +42,7 @@ export default function AppHeader() {
     <Col style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
       <Input 
         prefix={<SearchOutlined style={{ color: '#bfbfbf' }} />} 
-        placeholder="Tìm bài hát..." 
+        placeholder="Search..." 
         style={{ 
           width: '250px', // Giới hạn chiều rộng để không đẩy Login
           borderRadius: '8px',
