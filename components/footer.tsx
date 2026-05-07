@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { Layout, Row, Col, Space } from 'antd';
-import { GithubOutlined, FacebookOutlined, GlobalOutlined, YoutubeOutlined } from '@ant-design/icons';
+import { FacebookOutlined,  YoutubeOutlined } from '@ant-design/icons';
 
 const { Footer } = Layout;
 
@@ -42,8 +42,7 @@ The data is continuously updated from the community.
           <Col xs={12} md={8}>
             <h3 className="text-white font-bold mb-4">Follow Us</h3>
             <Space size="middle" className="text-2xl">
-              <a href="https://www.facebook.com/arcaeagame" style={{ color: arcaeaPurple }}><FacebookOutlined /></a>
-              <a href="https://www.youtube.com/@lowiro" style={{ color: arcaeaPurple }}><YoutubeOutlined /></a>
+              <a href="https://www.facebook.com/rover.tranmere/" style={{ color: arcaeaPurple }}><FacebookOutlined /></a>
             </Space>
           </Col>
         </Row>
