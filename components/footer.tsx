@@ -32,10 +32,9 @@ The data is continuously updated from the community.
           <Col xs={12} md={8}>
             <h3 className="text-white font-bold mb-4">Quick Links</h3>
             <ul className="list-none p-0 text-gray-400 text-sm space-y-2">
-              <li><a href="/" className="hover:text-purple-400">Song List</a></li>
-              <li><a href="/partners" className="hover:text-purple-400">Partners</a></li>
-              <li><a href="/world-mode" className="hover:text-purple-400">World Mode</a></li>
-              <li><a href="/about" className="hover:text-purple-400">About Us</a></li>
+              <li><a href="/SongList" className="hover:text-purple-400">Song List</a></li>
+              <li><a href="/Partners" className="hover:text-purple-400">Partners</a></li>
+              <li><a href="/Download" className="hover:text-purple-400">Download</a></li>
             </ul>
           </Col>
 
@@ -43,10 +42,9 @@ The data is continuously updated from the community.
           <Col xs={12} md={8}>
             <h3 className="text-white font-bold mb-4">Follow Us</h3>
             <Space size="middle" className="text-2xl">
-              <a href="#" style={{ color: arcaeaPurple }}><FacebookOutlined /></a>
-              <a href="#" style={{ color: arcaeaPurple }}><YoutubeOutlined /></a>
-              <a href="#" style={{ color: arcaeaPurple }}><GithubOutlined /></a>
-              <a href="#" style={{ color: arcaeaPurple }}><GlobalOutlined /></a>
+              <a href="https://www.facebook.com/arcaeagame" style={{ color: arcaeaPurple }}><FacebookOutlined /></a>
+              <a href="https://www.youtube.com/@lowiro" style={{ color: arcaeaPurple }}><YoutubeOutlined /></a>
+              <a href="https://arcaea.lowiro.com/en" style={{ color: arcaeaPurple }}><GlobalOutlined /></a>
             </Space>
           </Col>
         </Row>
